@@ -1,0 +1,23 @@
+    <form>
+        <h>temprature converter</h><br><br>
+        <input type="number" id="textbox" value="0"><br><br>
+        <input type="radio" id="tofaranite" name="unit">
+        <label for="tofaranite">celisus to faranite</label><br>
+        <input type="radio" id="tocelsious" name="unit">
+        <label for="tocelsious">faranite to celsious</label><br><br>
+        <button type="button" onclick="convert()">submit</button>
+    </form>
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(from color h s l);
+
+}
+
+h1 {
+    color: red;
+}
