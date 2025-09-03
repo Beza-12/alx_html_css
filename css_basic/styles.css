@@ -22,13 +22,36 @@ article {
     overflow-y: auto;
     /* allows scrolling if content is large */
     padding: 1rem;
+    background-color: #fdfdfd;
+     /* light background for readability */
+     border-radius: 10px;
+    /* rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* subtle shadow */
 }
+article h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+    article h2,
+        article h3 {
+            color: #34495e;
+        }
 
 /* Aside takes 1/3 of main width */
 aside {
     flex: 1;
     overflow-y: auto;
     padding: 1rem;
+}
+article p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+}
+article a {
+    color: #e74c3c;
+    text-decoration: underline;
 }
 
 /* Optional: basic styling for header and footer */
@@ -44,4 +67,26 @@ header,
 main,
 footer {
     box-sizing: border-box;
+}
+.learners-table {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learners-table h2 {
+    color: #2c3e50;
+}
+
+.learners-table table {
+    border: 1px solid #ccc;
+}
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-left: 2px solid #3498db;
 }
