@@ -1,23 +1,135 @@
-    <form>
-        <h>temprature converter</h><br><br>
-        <input type="number" id="textbox" value="0"><br><br>
-        <input type="radio" id="tofaranite" name="unit">
-        <label for="tofaranite">celisus to faranite</label><br>
-        <input type="radio" id="tocelsious" name="unit">
-        <label for="tocelsious">faranite to celsious</label><br><br>
-        <button type="button" onclick="convert()">submit</button>
-    </form>
+/* 0-styles.css */
 
-
-
-
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(from color h s l);
-
+    line-height: 1.6;
+    color: white;
 }
 
-h1 {
-    color: red;
+/* Header background */
+.header {
+    background: url("Assets/images/headphones_hero_1.jpg") no-repeat center center/cover;
+    height: 100vh;
+    /* Full screen height */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Overlay for dark effect */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Content wrapper */
+.container {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    padding: 0 40px;
+    z-index: 3;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    height: 25px;
+}
+
+/* Nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4d4d;
+    /* red hover */
+}
+
+/* Hero content */
+.hero-content {
+    margin-top: 60px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 14px 36px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background: #e60000;
+    transform: scale(1.05);
+}
+
+.hero-description {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #ddd;
 }
